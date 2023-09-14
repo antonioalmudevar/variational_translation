@@ -1,0 +1,20 @@
+batch_size: &batch_size 128
+save_epochs: 1000
+reduce: sum
+
+optimizer:
+  optimizer: SGD
+  base_lr: 0.001
+  base_batch_size: 128
+  batch_size: *batch_size
+  momentum: 0.9
+  weight_decay: 0.0001
+
+scheduler:
+  sched: multistep
+  epochs: 160
+  warmup_epochs: 5
+  warmup_lr: 0.0001
+  decay_milestones: [80, 120]
+  decay_rate: 0.1
+  sched_on_update: False
