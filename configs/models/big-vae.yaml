@@ -1,0 +1,9 @@
+pipeline: vae
+arch: conv2d
+latent_dim: 2048
+latent_dim_class: 1024
+hidden_dim: 2048
+channel_list: [128, 128, 256, 256, 512, 512]
+beta_kl: 0.001
+mean_norm: 1
+var_norm: 1
