@@ -29,7 +29,7 @@ python run_all.py mnist small-vae adam-128-1e-3-100
 ```
 The results of this training are the following:
 * The models at some epochs, which are in **results/.../models**.
-* Some reconstructions obtained during training in some epochs to control that the reconstruction is converging**results/.../images**.
+* Some reconstructions obtained during training in some epochs to control that the reconstruction is converging can be found in **results/.../images**.
 * Predictions and translations after the training is done, which can be found in **results/.../preds**.
 
 
