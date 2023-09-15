@@ -38,7 +38,7 @@ To verify the disentanglement of the two variables, we propose an experiment tha
 ```
 python classification.py config_data config_model config_training --freeze_encoder
 ```
-Here config_training refers to the configuration used to train the VAE and not the one used by the classifier. The latter is trained in all cases with the configuration found in **configs/training/sgd-128-1e-3.yaml**.
+Here config_training refers to the configuration used to train the VAE and not the one that is gone to be used to train the classifier. The latter is trained in all cases with the configuration found in **configs/training/sgd-128-1e-3.yaml**.
 An example of how to launch this experiment with for MNIST is given below.
 ```
 python classification.py mnist small-vae adam-128-1e-3-100 --freze_encoder
