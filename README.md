@@ -32,6 +32,7 @@ The results of this training are the following:
 * The models at some epochs, which will be in **results/.../models**.
 * Some reconstructions obtained during training in some epochs to control that the reconstruction is converging can be found in **results/.../images**.
 * Predictions and translations after the training is done, which can be found in **results/.../preds**.
+
 (where **...** means **config_data/config_model/config_training**)
 
 ### Classification to verify disentanglement
