@@ -33,7 +33,7 @@ The results of this training are the following:
 * Some reconstructions obtained during training in some epochs to control that the reconstruction is converging can be found in **results/.../images**.
 * Predictions and translations after the training is done, which can be found in **results/.../preds**.
 
-(where **...** means **config_data/config_model/config_training**)
+(where **/.../** means **/config_data/config_model/config_training/**)
 
 ### Classification to verify disentanglement
 To verify the disentanglement of the two variables, we propose an experiment that uses the two latent variables to train a classifier. To launch this experiment, we must use **classification.py** in a similar manner to **run_all.py**. We must specify with the **--freeze_encoder** flag that we do not want to finetune the encoder. Otherwise, it will finetune the encoder parameters and the accuracy will end up being high for the two latent variables. This script is used as follows:
