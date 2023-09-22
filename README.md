@@ -19,7 +19,7 @@ We do not provide the trained models or the results since the goal of the paper 
 
 
 ### Train, Test and Translate VAE
-All the results associated with this section are obtained with the **run_all.py** script located in **bin**. It is used as follows:
+All the results associated with this section are obtained with the **run_all.py** script located at **bin**. It is used as follows:
 ```
 python run_all.py config_data config_model config_training
 ```
@@ -28,7 +28,7 @@ For example, in case we want to run the experiment for the VAE proposed in the p
 python run_all.py mnist small-vae adam-128-1e-3-100
 ```
 The results of this training are the following:
-* The models at some epochs, which are in **results/.../models**.
+* The models at some epochs, which will be in **results/.../models**.
 * Some reconstructions obtained during training in some epochs to control that the reconstruction is converging can be found in **results/.../images**.
 * Predictions and translations after the training is done, which can be found in **results/.../preds**.
 
