@@ -7,6 +7,7 @@ To create the working environment to run the different experiments you must exec
 ```
 python3 -m venv venv
 source ./venv/bin/activate
+python setup.py develop
 pip install -r requirements.txt
 ```
 
