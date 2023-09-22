@@ -19,7 +19,7 @@ We do not provide the trained models or the results since the goal of the paper 
 
 
 ### Train, Test and Translate VAE
-All the results associated with this section are obtained with the **run_all.py** script. It is used as follows:
+All the results associated with this section are obtained with the **run_all.py** script located in **bin**. It is used as follows:
 ```
 python run_all.py config_data config_model config_training
 ```
