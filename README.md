@@ -5,6 +5,8 @@ This code allows to replicate the experiments presented in the article <span sty
 ## To begin with
 To create the working environment to run the different experiments you must execute the following chunk of code:
 ```
+git clone https://github.com/antonioalmudevar/variational_translation.git
+cd variational_translation
 python3 -m venv venv
 source ./venv/bin/activate
 python setup.py develop
