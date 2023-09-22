@@ -1,5 +1,5 @@
 # Variational Translation
-This code allows to replicate the experiments presented in the article. The present directories are explained below:
+This code allows to replicate the experiments presented in the article. The present are explained below:
 
 
 ## To begin with
@@ -19,7 +19,7 @@ We do not provide the trained models or the results since the goal of the paper 
 
 
 ### Train, Test and Translate VAE
-All the results associated with this section are obtained with the **run_all.py** script. It is used as follows:
+All the results associated with this section are obtained with the **run_all.py** script located at **bin**. It is used as follows:
 ```
 python run_all.py config_data config_model config_training
 ```
@@ -28,8 +28,8 @@ For example, in case we want to run the experiment for the VAE proposed in the p
 python run_all.py mnist small-vae adam-128-1e-3-100
 ```
 The results of this training are the following:
-* The models at some epochs, which are in **results/.../models**.
-* Some reconstructions obtained during training in some epochs to control that the reconstruction is converging**results/.../images**.
+* The models at some epochs, which will be in **results/.../models**.
+* Some reconstructions obtained during training in some epochs to control that the reconstruction is converging can be found in **results/.../images**.
 * Predictions and translations after the training is done, which can be found in **results/.../preds**.
 
 
@@ -38,7 +38,7 @@ To verify the disentanglement of the two variables, we propose an experiment tha
 ```
 python classification.py config_data config_model config_training --freeze_encoder
 ```
-Here the config_training refers to the configuration used to train the VAE and not the one used by the classifier. The latter is trained in all cases with the configuration found in **configs/training/sgd-128-1e-3.yaml**.
+Here config_training refers to the configuration used to train the VAE and not the one that is gone to be used to train the classifier. The latter is trained in all cases with the configuration found in **configs/training/sgd-128-1e-3.yaml**.
 An example of how to launch this experiment with for MNIST is given below.
 ```
 python classification.py mnist small-vae adam-128-1e-3-100 --freze_encoder
