@@ -1,4 +1,4 @@
-# Variational Unsupervised Domain Translation
+# Unsupervised Multiple Domain Translation through Controlled Disentanglement in Variational Autoencoder
 This code allows to replicate the experiments presented in the article <span style="color: blue"> *Unsupervised Multiple Domain Translation through Controlled Disentaglement in Variational Autoencoder* </span> (available soon). These are explained below.
 
 
